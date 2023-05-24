@@ -1,5 +1,6 @@
 {
   "name": "my-app",
+  "homepage": "https://yejay.github.io/deliverable-test",
   "version": "0.1.0",
   "description": "A React application for the Escapism Project, actual features of the application are to be determined.",
   "author": "Vasiliki Ioannidou, Marcus Schumann, Sert Akpinar, Andreas Schaaf, Yejay Demirkan",
@@ -9,14 +10,17 @@
     "url": "https://github.com/Aktuelle-Webtechnologien-Escapism/Deliverable/tree/main"
   },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "^5.0.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^14.0.0",
-    "@testing-library/user-event": "^14.4.3"
+    "@testing-library/user-event": "^14.4.3",
+    "gh-pages": "^5.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "^5.0.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
